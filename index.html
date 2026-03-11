@@ -823,8 +823,8 @@ diff --git a/src/app.js b/src/app.js
       id: 'console_log',
       severity: 'warning',
       label: 'Debug statement',
-      test: (line) => /^\+(?!.*\/\/).*\b(console\.(log|error|warn|debug|info|trace|dir|table|group|time)\s*\()/.test(line) ||
-                      /^\+.*\bdebugger\s*;?\s*$/.test(line.trim()),
+      test: (line) => /^\+(?!\s*\/\/).*\b(console\.(log|error|warn|debug|info|trace|dir|table|group|time)\s*\()/.test(line) ||
+                      /^\+(?!\s*\/\/).*\bdebugger\b/.test(line),
       detail: (line) => {
         const m = line.match(/\b(console\.\w+|debugger)/);
         return `${m ? m[1] : 'Debug statement'} — remove before merging`;
