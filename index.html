@@ -721,7 +721,7 @@ diff --git a/src/app.js b/src/app.js
     <h2>Frequently asked questions</h2>
     <div class="faq">
       <div class="faq-item">
-        <div class="faq-q">Does my code leave my browser?</div>
+        <h3 class="faq-q">Does my code leave my browser?</h3>
         <div class="faq-a">
           No. DiffLint runs entirely in your browser using JavaScript. Your diff is parsed and scanned locally
           using regular expressions — nothing is sent to any server. This makes it safe to use with
@@ -729,7 +729,7 @@ diff --git a/src/app.js b/src/app.js
         </div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What diff format does DiffLint support?</div>
+        <h3 class="faq-q">What diff format does DiffLint support?</h3>
         <div class="faq-a">
           DiffLint parses unified diff format — the output of <code>git diff</code>, <code>git show</code>,
           <code>git diff --staged</code>, <code>git stash show -p</code>, and <code>.patch</code> files.
@@ -737,7 +737,7 @@ diff --git a/src/app.js b/src/app.js
         </div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Why does DiffLint only scan added lines?</div>
+        <h3 class="faq-q">Why does DiffLint only scan added lines?</h3>
         <div class="faq-a">
           DiffLint focuses on lines you're <em>adding</em> to the codebase (lines starting with <code>+</code>
           in the diff). Checking deleted lines for issues would create noise — you want to know what's going
@@ -746,7 +746,7 @@ diff --git a/src/app.js b/src/app.js
         </div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Can I use DiffLint in my terminal or CI pipeline?</div>
+        <h3 class="faq-q">Can I use DiffLint in my terminal or CI pipeline?</h3>
         <div class="faq-a">
           The browser tool is free and designed for manual use. A CI integration is planned — a webhook that
           scans pull requests automatically and posts a comment with findings. For now, DiffLint works best as
@@ -754,7 +754,7 @@ diff --git a/src/app.js b/src/app.js
         </div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">DiffLint flagged something that's intentional. What do I do?</div>
+        <h3 class="faq-q">DiffLint flagged something that's intentional. What do I do?</h3>
         <div class="faq-a">
           Warnings and info findings are advisory — you're the one who decides what belongs in the commit.
           If you're intentionally leaving a TODO comment or a test-skip marker, that's your call. DiffLint
