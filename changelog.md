@@ -1,0 +1,28 @@
+# Changelog
+
+## 2026-03-22
+
+### Improved
+- Migrated Radicchio backend API to Hetzner
+
+## 2026-03-20
+
+### Improved
+- Switched to repo-owned Radicchio deployment scripts for more reliable deploys
+- Tightened SEO meta description to under 155 characters
+
+### Added
+- Google Analytics tracking
+
+## 2026-03-18
+
+### Improved
+- Added cross-links to niacin.io, AI Data Center Index, and Bank of Papa
+
+## 2026-03-11
+
+### Added
+- Launched DiffLint — browser-side git diff linter
+- Social preview: OG image (PNG), Twitter card metadata
+- FAQPage JSON-LD schema with FAQ section
+- Cross-links to the full developer tool cluster (jwtchop, epochop, b64chop, csvchop, hashchop, qrnch)
