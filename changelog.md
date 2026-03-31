@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-03-27
+
+### Added
+- Bing Webmaster Tools verification file added and wired into the deploy manifest
+
 ## 2026-03-22
 
 ### Improved
