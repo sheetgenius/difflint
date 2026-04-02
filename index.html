@@ -51,55 +51,7 @@
     ]
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Does my code leave my browser?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. DiffLint runs entirely in your browser using JavaScript. Your diff is parsed and scanned locally using regular expressions — nothing is sent to any server. This makes it safe to use with proprietary code, sensitive diffs, or diffs that might contain the very secrets you're scanning for."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What diff format does DiffLint support?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "DiffLint parses unified diff format — the output of git diff, git show, git diff --staged, git stash show -p, and .patch files. It correctly handles multi-file diffs and tracks which file each finding belongs to."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why does DiffLint only scan added lines?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "DiffLint focuses on lines you're adding to the codebase (lines starting with + in the diff). Checking deleted lines for issues would create noise — you want to know what's going in, not what's leaving. Lines without a + prefix are context lines and are ignored."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I use DiffLint in my terminal or CI pipeline?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The browser tool is free and designed for manual use. A CI integration is planned — a webhook that scans pull requests automatically and posts a comment with findings. For now, DiffLint works best as a pre-push habit alongside git diff --staged."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "DiffLint flagged something that's intentional. What do I do?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Warnings and info findings are advisory — you decide what belongs in the commit. If you're intentionally leaving a TODO comment or a test-skip marker, that's your call. DiffLint surfaces it so the decision is conscious, not accidental."
-        }
-      }
-    ]
-  }
-  </script>
-  <style>
+    <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
